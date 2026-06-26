@@ -66,31 +66,17 @@
         </div>
     </section>
 
-    <!-- 4. TIRED SERVICES MENU -->
+    <!-- 4. FLAT CONSULTATION PRICING MENU -->
     <section class="vv-services-section">
         <div class="section-container">
-            <h2 class="center-title">Services</h2>
-            <div class="pricing-grid">
-                <!-- Card 1 -->
-                <div class="price-card">
-                    <h4>Consultation</h4>
-                    <div class="amount">£100</div>
-                    <p>Strategy sessions for campaigns and talent development.</p>
-                    <a href="#contact" class="btn-card-action">Book Now</a>
-                </div>
-                <!-- Card 2 -->
-                <div class="price-card highlighted">
-                    <h4>Photo Shoot</h4>
-                    <div class="amount">£250</div>
-                    <p>Studio and location photography for artists and brands.</p>
-                    <a href="#contact" class="btn-card-action">Book Now</a>
-                </div>
-                <!-- Card 3 -->
-                <div class="price-card">
-                    <h4>Studio Session</h4>
-                    <div class="amount">£300</div>
-                    <p>Full production session for audio, video, and content creation.</p>
-                    <a href="#contact" class="btn-card-action">Book Now</a>
+            <h2 class="center-title">Services & Pricing</h2>
+            <div class="pricing-grid" style="display: flex; justify-content: center;">
+                <!-- Unified Strategy Consultation Card -->
+                <div class="price-card highlighted" style="max-width: 500px; width: 100%;">
+                    <h4>Project Consultation</h4>
+                    <div class="amount">£30</div>
+                    <p>Flat intake setup session to map production parameters, timeline goals, and campaign assets. Retained against final production bundle bookings.</p>
+                    <a href="#contact" class="btn-card-action">Submit Inquiry</a>
                 </div>
             </div>
         </div>
@@ -102,8 +88,7 @@
         <h2>Cinematic Visuals</h2>
         <p>Our team creates cinematic visuals that amplify the music and tell the story behind every release.</p>
         <div class="showreel-actions">
-            <!-- Fixed the redirect path to point to the homepage contact anchor below -->
-        <a href="./index.html#contact" class="btn-primary">Get in Touch</a>
+            <a href="./index.html#contact" class="btn-primary">Get in Touch</a>
             <a href="#" class="btn-play"><span class="play-icon">▶</span> Production Reel</a>
         </div>
     </section>
@@ -129,33 +114,34 @@
                 <p class="brand-subtext">Verified Visionary</p>
                 <div class="meta-details">
                     <p><a href="mailto:verifiedvisionaryinfo@gmail.com">verifiedvisionaryinfo@gmail.com</a></p>
-                    <p><a href="tel:+441234567890">+44 07822866030</a></p>
+                    <p><a href="tel:+447822866030">+44 07822866030</a></p>
                     <p class="address">24-26 Regent Pl,<br>Birmingham B1 3NJ</p>
                 </div>
                
                 <div class="social-channels">
-    <!-- Cleaned and verified custom handles with secure new-tab parameters -->
-    <a href="https://www.instagram.com/verifiedvisionary" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://www.tiktok.com/@verifiedvisionary?_r=1&_t=ZN-97WSDnv1A94" target="_blank" rel="noopener noreferrer">TikTok</a>
-    <a href="https://youtube.com/@theverifiedhq?si=wNM0OSSIGO5YE8xq" target="_blank" rel="noopener noreferrer">YouTube</a>
-</div>
-            
+                    <a href="https://www.instagram.com/verifiedvisionary" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.tiktok.com/@verifiedvisionary?_r=1&_t=ZN-97WSDnv1A94" target="_blank" rel="noopener noreferrer">TikTok</a>
+                    <a href="https://youtube.com/@theverifiedhq?si=wNM0OSSIGO5YE8xq" target="_blank" rel="noopener noreferrer">YouTube</a>
+                </div>
+            </div>
             
             <div class="contact-form-wrapper">
                 <h3>Ready to create?</h3>
                 <p>Send us your project details and we’ll help you book studio time, production, and talent support.</p>
+                
+                <!-- Clean Native HTML Submission Endpoint -->
                 <form action="https://formspree.io/f/xlgybjay" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" required placeholder="Your full name">
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" required placeholder="your.email@domain.com">
+                        <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" rows="5" required placeholder="Tell us about your project or required studio setup..."></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or required studio setup..."></textarea>
                     </div>
                     <button type="submit" class="btn-submit">Send Inquiry</button>
                 </form>
